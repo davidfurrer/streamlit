@@ -23,9 +23,8 @@ streamlit run app.py
 sign up
 
 ```
-heroku login && heroku create && git push heroku master
+heroku login && heroku create streamlit-slider-demo-app && git push heroku master
 ```
-Go to url shown
 
 ## result
 
