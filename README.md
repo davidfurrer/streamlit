@@ -29,7 +29,7 @@ Go to url shown
 
 ## result
 
-https://aqueous-savannah-99501.herokuapp.com/
+https://streamlit-slider-demo-app.herokuapp.com/
 
 ## Procfile
 
