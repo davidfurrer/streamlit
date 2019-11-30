@@ -1,6 +1,6 @@
 # streamlit
 
-## app
+## app\.py
 
 ```python
 import streamlit as st
@@ -36,5 +36,25 @@ https://aqueous-savannah-99501.herokuapp.com/
 Specifies deployment
 
 ```
-web: streamlit run app.py
+web: sh setup.sh && streamlit run app.py
 ```
+
+## setup\.sh
+
+```
+mkdir -p ~/.streamlit/
+
+echo "\
+[general]\n\
+email = \"mail@gmail.com\"\n\
+" > ~/.streamlit/credentials.toml
+
+echo "\
+[server]\n\
+headless = true\n\
+enableCORS=false\n\
+port = $PORT\n\
+" > ~/.streamlit/config.toml
+```
+
+Reference: https://towardsdatascience.com/quickly-build-and-deploy-an-application-with-streamlit-988ca08c7e83
